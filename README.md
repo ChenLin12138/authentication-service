@@ -1,4 +1,4 @@
-# licensing-service
+# authentication-service
 Spring Cloud Learning authentication-service
 ## What Is It?
 Spring cloud components learning.
