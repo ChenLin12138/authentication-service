@@ -15,3 +15,21 @@ http://maven.apache.org/download.cgi
 5. Import project as Existing maven projects.
 6. Use mvn clean install to install this project.
 ## Demo
+- 通过以下url获取jwt token
+```
+http://localhost:5555/api/auth/token
+```
+![image](https://github.com/ChenLin12138/authentication-service/blob/master/demo/pic/%E8%8E%B7%E5%8F%96jwt.png)
+
+在https://jtw.io中查看jwt净荷
+![image](https://github.com/ChenLin12138/authentication-service/blob/master/demo/pic/%E6%9F%A5%E7%9C%8Bjwt%E5%86%85%E5%AE%B9.png)
+
+通过jwt token访问组织服务器内容
+```
+http://localhost:5555/api/organization/v1/organizations/35690f33-71b1-4996-83f8-93b8ca411848
+```
+![image](https://github.com/ChenLin12138/authentication-service/blob/master/demo/pic/%E8%8E%B7%E5%8F%96jwt.png)
+
+
+
+
