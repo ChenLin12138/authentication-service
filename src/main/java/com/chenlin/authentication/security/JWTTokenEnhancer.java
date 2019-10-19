@@ -27,7 +27,7 @@ public class JWTTokenEnhancer implements TokenEnhancer {
     public OAuth2AccessToken enhance(OAuth2AccessToken accessToken, OAuth2Authentication authentication) {
         Map<String, Object> additionalInfo = new HashMap<>();
         String orgId =  getOrgId(authentication.getName());
-        additionalInfo.put("organizationId", getOrgId(orgId));
+        additionalInfo.put("customId", "10000");
 
         ((DefaultOAuth2AccessToken) accessToken).setAdditionalInformation(additionalInfo);
         return accessToken;
